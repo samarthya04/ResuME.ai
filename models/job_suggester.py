@@ -7,8 +7,8 @@ def suggest_jobs(resume_keywords):
     print("Job Titles DataFrame Columns:", job_titles_df.columns)
     print("Job Titles DataFrame Head:\n", job_titles_df.head())
 
-    vectorizer = TfidfVectorizer()
-    job_desc_matrix = vectorizer.fit_transform(job_titles_df['job description'])
+    # vectorizer = TfidfVectorizer()
+    # job_desc_matrix = vectorizer.fit_transform(job_titles_df['job description'])
 
-    job_titles = job_titles_df['Job title'].tolist()
+    # job_titles = job_titles_df['Job title'].tolist()
     return job_titles  
